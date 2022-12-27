@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Responsive Coffee Website</title>
+</head>
+<body>
+    <div class="login-form">
+        <form action="">
+            <div id="close-login" class="fas fa-times"></div>
+            <a href="#" class="logo"><i class="fas fa-mug-hot"></i> Coffee.</a>
+            <h3>let's start a new great day</h3>
+            <input type="email" name="email" placeholder="enter your email" id="email" class="box">
+            <input type="password" name="password" placeholder="enter your password" id="password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="login-btn">
+            <p class="account">don't have an account? <a href="#">create one!</a></p>
+
+        </form>
+    </div>
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="d-flex flex-row align-items-center">
+                <a href="#" class="logo me-auto"><i class="fas fa-mug-hot"></i> Coffee.</a>
+                <nav class="nav">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#menu">menu</a>
+                    <a href="#gallery">gallery</a>
+                    <a href="#blogs">blogs</a>
+                    <a href="#contact">contact</a>
+                </nav>
+                <div class="icons">
+                    <div id="menu-btn" class="fas fa-bars"></div> 
+                    <div id="login-btn" class="fas fa-user"></div> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row min-vh-100">
+                <div class="row align-items-center text-center text-md-start min-vh-100">
+                    <div class="col-md-6">
+                        <span>coffe house</span>
+                        <h3>start you day with our coffe</h3>
+                        <a href="#" class="link-btn">get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-center about-cont">
+                <div class="col-md-6 img-about">
+                    <img src="./img/about.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <span>why choose us?</span>
+                    <h3 class="title">the best coffee maker in the town</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem laborum itaque. Perspiciatis in veniam illum deserunt, quos animi maiores nisi officiis amet accusantium soluta a, excepturi vero obcaecati nobis.</p>
+                    <a href="#" class="about-btn">read more</a>
+                    <div class="icons-about">
+                        <div class="icons">
+                           <i class="fas fa-coffee"></i>
+                           <h3>best coffee</h3>
+                        </div>
+                        <div class="icons">
+                           <i class="fas fa-shipping-fast"></i>
+                           <h3>free delivery</h3>
+                        </div>
+                        <div class="icons">
+                           <i class="fas fa-headset"></i>
+                           <h3>24/7 service</h3>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <h1 class="heading"> our menu </h1>
+        <div class="container box-container">
+           <div class="box">
+              <img src="./img/menu-1.png" alt="">
+              <h3>coffee bean</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
+              <a href="#" class="menu-btn">read more</a>
+           </div>
+           <div class="box">
+              <img src="./img/menu-2.png" alt="">
+              <h3>coffee bean</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
+              <a href="#" class="menu-btn">read more</a>
+           </div>
+           <div class="box">
+              <img src="./img/menu-3.png" alt="">
+              <h3>coffee bean</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
+              <a href="#" class="menu-btn">read more</a>
+           </div>
+           <div class="box">
+              <img src="./img/menu-4.png" alt="">
+              <h3>coffee bean</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
+              <a href="#" class="menu-btn">read more</a>
+           </div>
+           <div class="box">
+              <img src="./img/menu-5.png" alt="">
+              <h3>coffee bean</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
+              <a href="#" class="menu-btn">read more</a>
+           </div>
+           <div class="box">
+              <img src="./img/menu-6.png" alt="">
+              <h3>coffee bean</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
+              <a href="#" class="menu-btn">read more</a>
+           </div>
+        </div> 
+    </section>
+    <section class="gallery" id="gallery">
+        <h1 class="heading"> our gallery </h1>
+        <div class="box-container container">
+           <div class="box">
+              <img src="./img/g-img-1.jpg" alt="">
+              <div class="content">
+                 <h3>morning coffee</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolore?</p>
+                 <a href="#" class="g-btn">read more</a>
+              </div>
+           </div>
+           <div class="box">
+              <img src="./img/g-img-2.jpg" alt="">
+              <div class="content">
+                 <h3>morning coffee</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolore?</p>
+                 <a href="#" class="g-btn">read more</a>
+              </div>
+           </div>
+           <div class="box">
+              <img src="./img/g-img-3.jpg" alt="">
+              <div class="content">
+                 <h3>morning coffee</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolore?</p>
+                 <a href="#" class="g-btn">read more</a>
+              </div>
+           </div>
+           <div class="box">
+              <img src="./img/g-img-4.jpg" alt="">
+              <div class="content">
+                 <h3>morning coffee</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolore?</p>
+                 <a href="#" class="g-btn">read more</a>
+              </div>
+           </div>
+           <div class="box">
+              <img src="./img/g-img-5.jpg" alt="">
+              <div class="content">
+                 <h3>morning coffee</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolore?</p>
+                 <a href="#" class="g-btn">read more</a>
+              </div>
+           </div>
+           <div class="box">
+              <img src="./img/g-img-6.jpg" alt="">
+              <div class="content">
+                 <h3>morning coffee</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolore?</p>
+                 <a href="#" class="g-btn">read more</a>
+              </div>
+           </div>
+        </div>
+    </section>  
+    <section class="blogs" id="blogs">
+        <h1 class="heading"> our daily posts </h1>
+        <div class="box-container container">
+           <div class="box">
+              <div class="image">
+                 <img src="./img/b-1.jpg" alt="">
+              </div>
+              <div class="content">
+                 <h3>blog title goes here.</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, illum?</p>
+                 <a href="#" class="blog-btn">read more</a>
+              </div>
+              <div class="icons">
+                 <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                 <span> <i class="fas fa-user"></i> by admin </span>
+              </div>
+           </div>
+           <div class="box">
+              <div class="image">
+                 <img src="./img/b-2.jpg" alt="">
+              </div>
+              <div class="content">
+                 <h3>blog title goes here.</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, illum?</p>
+                 <a href="#" class="blog-btn">read more</a>
+              </div>
+              <div class="icons">
+                 <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                 <span> <i class="fas fa-user"></i> by admin </span>
+              </div>
+           </div>
+           <div class="box">
+              <div class="image">
+                 <img src="./img/b-3.jpg" alt="">
+              </div>
+              <div class="content">
+                 <h3>blog title goes here.</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, illum?</p>
+                 <a href="#" class="blog-btn">read more</a>
+              </div>
+              <div class="icons">
+                 <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                 <span> <i class="fas fa-user"></i> by admin </span>
+              </div>
+           </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">contact us</h1>
+        <div class="container">
+           <div class="row align-items-center">
+              <div class="col-md-6 mb-5 mb-md-0 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10501.099585939326!2d2.3499021!3d48.8529682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36401da7abfa068d!2sCatedral%20de%20Notre%20Dame!5e0!3m2!1ses-419!2sar!4v1672175639935!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+              </div>
+              <form action="" class="col-md-6">
+                 <h3>get in touch</h3>
+                 <input type="text" placeholder="your name" class="box">
+                 <input type="email" placeholder="email" class="box">
+                 <input type="number" placeholder="phone" class="box">
+                 <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
+                 <input type="submit" value="send message" class="contact-btn">
+              </form>
+           </div>
+        </div>
+    </section>
+    <section class="footer">
+        <section class="newsletter">
+            <div class="container">
+                <h3>newsletter</h3>
+                <p>subscribe for latest upadates</p>
+                <form action="">
+                   <input type="email" name="" placeholder="enter your email" id="" class="email">
+                   <input type="submit" value="subscribe" class="news-btn">
+                </form>
+            </div>
+        </section>
+        <a href="#" class="logo"><i class="fas fa-mug-hot"></i> Coffee.</a>
+        <div class="share">
+           <a href="#" class="fab fa-facebook-f"></a>
+           <a href="#" class="fab fa-instagram"></a>
+           <a href="#" class="fab fa-twitter"></a>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import "./responsive";
+
+.header{
+    z-index: 1000;
+    padding: 2rem 4rem;
+
+    // @include mobile{
+
+    // }
+
+
+    &.active{
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    .logo{
+        font-size: 2.5rem;
+        color: $white;
+        font-weight: bolder;
+
+    }
+
+    .nav{
+
+        @include tablet-l{
+            position: absolute;
+            top: 99%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .9);
+            height: 100vh;
+            flex-flow: column;
+            padding: 1rem 0;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+            }
+        }
+
+        a{
+            
+            font-size: 2rem;
+            margin: 2rem;
+            color: $white;
+            
+            &:hover{
+                text-decoration: underline !important;
+                text-underline-offset: .5rem;
+                
+            }
+
+            @include tablet-l{
+                margin: 1rem 2rem;
+                color: $white;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .icons{
+        font-size: 2.5rem;
+        color: $white;
+        margin-left: 2rem;
+        cursor: pointer;
+
+        @include tablet-l{
+            font-size: 3.5rem
+        };
+
+        @include mobile{
+            font-size: 2.5rem;
+        }
+
+    }
+
+    #menu-btn{
+        display: none;
+
+        @include tablet-l{
+            display: inline-block;
+            margin-right: 3rem;
+        }
+    }
+
+}

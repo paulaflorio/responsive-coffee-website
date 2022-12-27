@@ -1,0 +1,26 @@
+.footer{
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../img/bg-main.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+ 
+    .logo{
+        font-size: 2rem;
+        color: $white;
+        font-weight: bolder;
+    }
+  
+    .share{
+        margin-top: 1rem;
+    
+        a{
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color:$white;
+            margin:0 .3rem;
+
+        }
+    }
+ }

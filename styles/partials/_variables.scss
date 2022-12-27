@@ -1,0 +1,71 @@
+@import "./responsive";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    text-decoration: none !important;
+    outline: none;
+    transition: all .2s linear !important;
+
+    @include tablet{
+        scroll-padding-top: 8rem;
+
+    }
+
+    @include mobile{
+        scroll-padding-top: 7rem;
+
+    }
+
+}
+
+$main-color: #69503c;
+$mid-br: #7e634e;
+$light-br: #ab9680;
+$black: #222;
+$white: #fff;
+$light-color: #666;
+$light-bg: #eee;
+$border: .1rem solid $main-color;
+$box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+
+@mixin title($titleSize){
+    font-size: $titleSize;
+    color: $black;
+    text-transform: capitalize;
+}
+
+@mixin text($textSize){
+    font-size: $textSize;
+    line-height: 2;
+    color: $light-color;
+    margin-bottom: 0;
+}
+
+.btn{
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    border: $border;
+    border-radius: 2px;
+    cursor: pointer;
+    background: transparent;
+
+    &:hover{
+        background-color: $white;
+        color: $main-color;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+}

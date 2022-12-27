@@ -1,0 +1,56 @@
+@import "./responsive";
+
+.contact{
+    padding: 5rem 7rem 15rem 7rem;
+
+    @include mobile{
+        padding: 3rem 2rem;
+    }
+
+    .heading{
+        margin-bottom: 6rem;
+    }
+
+    form{
+        padding-left: 4rem;
+ 
+        h3{
+          @include title(3rem);
+          padding-bottom: 1rem;
+        }
+ 
+        .box{
+          margin:.7rem 0;
+          border:$border;
+          font-size: 1.6rem;
+          width: 100%;
+          padding:1.2rem 1.4rem;
+          border-radius: .2rem;
+ 
+            &:focus{
+                background: $main-color;
+                color:$white;
+ 
+                &::placeholder{
+                    color:$light-bg;
+                }
+        
+            }
+ 
+            textarea{
+                height: 15rem;
+                resize: none;
+            }
+        }
+
+        .contact-btn{
+            @extend .btn;
+            color: $main-color;
+            
+            &:hover{
+                background-color: $main-color;
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@import "./responsive";
+
+.about-cont{
+    @include tablet-l{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about{
+    padding: 5rem 7rem 20rem 7rem;
+
+    @include tablet{
+        padding:2rem 2rem 7rem 2rem;
+    }
+
+    @include mobile{
+        padding:2rem 2rem 5rem 2rem;
+    }
+
+    .img-about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        margin: 4rem 0;
+
+        img{
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    span{
+        font-size: 2.5rem;
+        color: $main-color;
+    }
+
+    .title{
+        padding-top: 1rem;
+        @include title(3rem);
+    }
+
+    p{
+        padding: 1rem 0;
+        @include text(1.6rem);
+        margin-bottom: 2rem
+    }
+
+    .about-btn{
+        @extend .btn;
+        color: $main-color;
+        border: 1px solid $main-color;
+
+        &:hover{
+            background-color: $main-color;
+            color: $white;
+        }
+    }
+
+    .icons-about{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        gap: 1.5rem;
+
+        @include tablet-l{
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include tablet{
+            margin-top: 8rem;
+        }
+
+        @include mobile{
+            margin-top: 6rem;
+        }
+
+
+        .icons{
+            padding: 2rem;
+            background: $light-bg;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            i{
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+                color: $main-color;
+            }
+
+            h3{
+                @include title(1.5rem);
+            }
+        }
+    }
+}

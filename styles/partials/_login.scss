@@ -1,0 +1,112 @@
+.login-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 2rem;
+
+    &.active{
+        display: flex;
+    }
+    
+    form{
+        width: 50rem;
+        padding: 4rem;
+        background-color: $white;
+        text-align: center;
+        position: relative;
+        animation: fadeIn .2s linear;
+
+        #close-login{
+            position: absolute;
+            top: -4rem;
+            right: 0;
+            font-size: 3rem;
+            color: $white;
+            cursor: pointer;
+
+            &:hover{
+                transform: rotate(90deg);
+            }
+        }
+
+        .logo, i{
+            font-size: 2.5rem;
+            color: $main-color;
+            font-weight: bolder;
+
+        }
+
+        h3{
+            padding: 1rem 0;
+            @include title(2rem);
+            margin-top: 1rem;
+        }
+
+        .box{
+            width: 100%;
+            padding: 1.2rem 1.4rem;
+            border: $border;
+            border-radius: 2px;
+            font-size: 1.6rem;
+            margin: 1rem 0;
+        }
+
+        .flex{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin: 1rem 0;
+
+            label{
+                @include text(1.4rem);
+                cursor: pointer;
+            }
+
+            a{
+                font-size: 1.5rem;
+                color: $main-color;
+                margin-left: auto;
+
+                &:hover{
+                    text-decoration: underline !important;
+                }
+
+            }
+
+        }
+
+        .login-btn{
+            @extend .btn;
+            width: 100%;
+            margin-bottom: 2rem;
+
+            &:hover{
+                background-color: $main-color;
+                color: $white;
+                font-weight: 400;
+            }
+        }
+
+        .account{
+            padding: 1.5rem .5rem;
+            background-color: $light-bg;
+            @include text(1.5rem);
+
+            a{
+                @include text(1.5rem);
+                color: $main-color;
+
+                &:hover{
+                    text-decoration:  underline !important;
+                }
+            }
+        }
+    }
+}
